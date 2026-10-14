@@ -1,0 +1,55 @@
+* {
+  font-family: HELVETICA;
+  text-align: center;
+  margin: 0 auto;
+}
+html {
+    font-size: 200%;
+}
+body{
+    background-color: #FFECD7;
+    margin: 200px;
+}
+#card{
+    background-color: #008DB1;
+    padding: 20px;
+    border-radius: 35px;
+    border-style: solid;   
+    border-width: 5px;
+    border-color: #004E63;
+    width: 35%;
+    color: #FFFFFE;
+}
+#quote{
+    font-family: "Brush Script MT";
+    color: #FFD783;
+    padding: 10px;
+    font-size: 120%;
+}
+#list{
+    color: #FFFFFE;
+    padding: 10px;
+    font-size: 120%;
+}
+#subtitle{
+    color: #91E4FB;
+    text-decoration: none;
+    padding: 20px;
+    margin: 10px;
+    font-size: 100%;
+}
+#img_container{
+    background-color: #FFFFFE;
+    padding: 10px;
+    margin: 10px;
+}
+#main_img{
+    width: 100%;
+}
+ul {
+    text-align: center;
+    list-style-position: inside;
+}
+#title{
+    padding: 15px;
+}
