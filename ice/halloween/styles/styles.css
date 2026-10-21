@@ -1,0 +1,79 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background-color: black;
+    color: white;
+    font-family: Arial, sans-serif;
+}
+#wrapper {
+    width: 100%;
+    min-height: 100vh;
+}
+header {
+    background-color: #04232F;
+    width: 100%;
+    padding: 20px;
+}
+nav ul {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    list-style: none;
+    font-family: "Fontdiner Swanky"; /* I couldnt get this font to woek exactly like I had hoped, it looks a bit different*/
+}
+nav li {
+    color: white;
+    font-size: 18px;
+}
+nav li:hover{
+    text-decoration: underline;
+}
+main {
+    position: relative;
+    min-height: 85vh;
+    padding: 50px 10%;
+    overflow: hidden;
+}
+main img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 0;
+    filter: brightness(67%);
+}
+main h1, main section {
+    position: relative;
+    z-index: 1;
+    color: white;
+}
+h1 {
+    text-align: center;
+    font-size: 48px;
+    margin-bottom: 40px;
+    font-family: "Fontdiner Swanky";
+}
+section {
+    margin-bottom: 40px;
+}
+h2 {
+    font-size: 35px;
+    margin-bottom: 15px;
+    font-family: Impact;
+}
+p {
+    font-size: 18px;
+    line-height: 1.5;
+}
+footer {
+    background-color: #01010E;
+    color: white;
+    width: 100%;
+    text-align: center;
+    padding: 20px;
+}
