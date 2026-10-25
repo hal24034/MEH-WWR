@@ -3,25 +3,70 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link href="styles.css">
+    <title>Portal Page</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
-    <body>
-<header>
-    <nav>
-        <a href="http://www.byui.edu" target="_blank">My University</a>
-        <!-- <a href="assignments.html">assignments</a> -->
-    </nav>
-</header>
-<main>
-<h1>Evan Hales</h1>
-<img src="images/placeholder.png" alt="There is no picture rn" width="300px" >
-<p>
-    hi goes text here 
-</p>
-</main>
-<footer>
-<p>footer info goes here</p>
-</footer>
-    </body>
+<body>
+    <header>
+        <nav>
+            <a href="https://hal24034.github.io/MEH-WWR/wwr/" target="_blank">WWR</a>
+            <a href="#">ICE</a>
+            <a href="#">ABOUT ME</a>
+            <img id="logo" src="logoxd.png" alt="Website Logo">
+        </nav>
+        <h1>ABOUT ME</h1>
+        <p>My name is Evan hales and I am a student at BYUI. This website is a portal page made for my WDD130 class to catelog and showcase all of my assignments. Here I will keep a detailed inventory of all the projects as I complete them. I hope you enjoy them!</p>
+        <h2>What is an ICE project?</h2>
+        <p>And ICE project (In Class Exercise) is a project that we did in class that took about an hour. It is generally advised to not spend more than that much time on the projects. We do them in class frequently to test and strngthen our knowlage on things we did thought the week. We have also done multiweek projects like this one or the WWR (White Water Rafting) Project. </p>
+    </header>
+    <div id="main">
+        <img id="backgrnd_img" src="bgimg.jpg" alt="Inside of a battleships bridge.">
+        <h2>MY PROJECTS</h2>
+        <!--ACCORDIAN START-->
+        <button class="accordion">White Water Rafting</button>
+<div class="panel">
+    <a href="https://hal24034.github.io/MEH-WWR/wwr/" target="_blank">Dry Oar Rafting Page</a>
+  <p>White water rafing project from first part of the WDD 130 class. This was the beginning project for this class.</p>
+</div>
+
+<button class="accordion">Prohpet Card ICE</button>
+<div class="panel">
+    <a href="https://hal24034.github.io/MEH-WWR/ice/p_card/" target="_blank">Phrophet Card ICE</a>
+  <p>ICE project from one day in class to make a simple website using some HTML and CSS.</p>
+</div>
+
+<button class="accordion">Halloween CSS ICE</button>
+<div class="panel">
+    <a href="https://hal24034.github.io/MEH-WWR/ice/halloween/" target="_blank">Halloween page</a>
+  <p>ICE project where we were given HTML for a website but no CSS. We were supposed to make the CSS for the website without toughing the HTML. There was also a compition for whoever made the best site to get aa prize. I really liked how this page turned out.</p>
+</div>
+
+<button class="accordion">Devo Table ICE</button>
+<div class="panel">
+    <a href="https://hal24034.github.io/MEH-WWR/ice/devo_table/" target="_blank">Link to Devo Table</a>
+  <p>ICE project where we expirimented making tables for a website.</p>
+</div>
+    </div>
+    <!--ACORDIAN END-->
+    <footer>
+        <p id="footer_text">Evan Hales, Updated: October 24 2026</p>
+    </footer>
+</body>
 </html>
+<!--SCRIPT-->
+<script>
+var acc = document.getElementsByClassName("accordion");
+var i;
+
+for (i = 0; i < acc.length; i++) {
+  acc[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var panel = this.nextElementSibling;
+    if (panel.style.display === "block") {
+      panel.style.display = "none";
+    } else {
+      panel.style.display = "block";
+    }
+  });
+}
+</script>
