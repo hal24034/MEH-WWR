@@ -21,3 +21,44 @@
   background-color: white;
   overflow: hidden;
 }
+
+body {
+  background-image: url('bgimg.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: grid;
+}
+nav {
+  background-color: rgb(148, 148, 187);
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+nav #nav_items {
+  font-size: 75px;
+  font-size: 55px;
+}
+
+#nav_items a{
+  color: whitesmoke;
+  text-decoration: none;
+  padding: 20px;
+  margin: 20px;
+  background-color: #343c62;
+}
+#nav_items a:hover{
+  text-decoration: underline;
+}
+
+
+.logo {
+  height: 120px;
+  width: auto;
+  position: absolute;
+  right: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+}   
