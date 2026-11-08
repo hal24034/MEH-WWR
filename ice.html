@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ICE Page</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header>
+        <nav>
+          <div id="nav_items">
+            <a href="https://hal24034.github.io/MEH-WWR/wwr/" target="_blank">WWR</a>
+            <a href="index.html">HOME</a>
+            <a href="#">ABOUT ME</a>
+            </div>
+          <img id="logo" src="logoxd.png" alt="Website Logo" height="140px">
+        </nav>
+    </header>
+    <div id="main">
+        <button class="accordion">Prohpet Card ICE</button>
+<div class="panel">
+    <a href="https://hal24034.github.io/MEH-WWR/ice/p_card/" target="_blank">Phrophet Card ICE</a>
+  <p>ICE project from one day in class to make a simple website using some HTML and CSS.</p>
+</div>
+
+<button class="accordion">Halloween CSS ICE</button>
+<div class="panel">
+    <a href="https://hal24034.github.io/MEH-WWR/ice/halloween/" target="_blank">Halloween page</a>
+  <p>ICE project where we were given HTML for a website but no CSS. We were supposed to make the CSS for the website without toughing the HTML. There was also a compition for whoever made the best site to get aa prize. I really liked how this page turned out.</p>
+</div>
+
+<button class="accordion">Devo Table ICE</button>
+<div class="panel">
+    <a href="https://hal24034.github.io/MEH-WWR/ice/devo_table/" target="_blank">Link to Devo Table</a>
+  <p>ICE project where we expirimented making tables for a website.</p>
+</div>
+  <button class="accordion">Positioning ICE</button>
+<div class="panel">
+    <a href="https://hal24034.github.io/MEH-WWR/ice/positioning/positioning/positioning.html" target="_blank">Link to Positioning Activity</a>
+  <p>During this ICE project we practiced using grid proprrties to align items to match the provided picture.</p>
+</div>
+  <button class="accordion">Flags ICE</button>
+<div class="panel">
+    <a href="https://hal24034.github.io/MEH-WWR/ice/positioning/positioning/positioning.html" target="_blank">Link to Flags page</a>
+  <p>Kind of like the Positioning ICE activity. We made flags using the grid properties.</p>
+</div>
+  <button class="accordion">Image Gallery ICE</button>
+<div class="panel">
+    <a href="https://hal24034.github.io/MEH-WWR/ice/gallery/gallery.html" target="_blank">Link to gallery page</a>
+  <p>We practiced image resizing and changing the image directory in this ICE so that the images loaded fast.</p>
+</div>
+  <button class="accordion">Sign-up form ICE</button>
+<div class="panel">
+    <a href="https://hal24034.github.io/MEH-WWR/ice/signup/signup.html" target="_blank">Link to signup form page</a>
+  <p>We practiced using grid among many other HTML and CSS tricks to get the sign up form to be the same as a provided picture.</p>
+</div>
+    </div>
+    <!--ACORDIAN END-->
+    <footer>
+        <p id="footer_text"> &COPY Evan Hales, Updated: November 7 2026</p>
+    </footer>
+</body>
+</html>
+<!--SCRIPT-->
+<script>
+var acc = document.getElementsByClassName("accordion");
+var i;
+
+for (i = 0; i < acc.length; i++) {
+  acc[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var panel = this.nextElementSibling;
+    if (panel.style.display === "block") {
+      panel.style.display = "none";
+    } else {
+      panel.style.display = "block";
+    }
+  });
+}
+</script>
